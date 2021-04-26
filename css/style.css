@@ -1,0 +1,108 @@
+body{
+    overflow: hidden;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 100px;
+}
+
+
+.flex-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    padding-left: 14px;
+}
+
+form{
+    display: block;
+}
+
+label{
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+textarea{
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    width: 270px;
+    height: 100px;
+}
+
+input{
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    color: grey;
+    padding: 10px;
+}
+
+input[type="text"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    width: 250px;
+    height: 20px;
+
+    padding: 10px;
+
+}
+
+input[type="date"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    width: 250px;
+    height: 20px;
+
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    width: 280px;
+    height: 40px;
+
+    border: none;
+    color: whitesmoke;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 20px;
+
+    background-color: rgb(179, 100, 179);
+}
+
+.form{
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 2px 2px 20px 0.1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+li{
+    font-size: 20px;
+}
