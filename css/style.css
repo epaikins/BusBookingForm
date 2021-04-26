@@ -1,3 +1,11 @@
+body {
+    min-height:100%;
+    background:url('/assets/busbg.jpg') ;
+    background-color: rgb(160, 160, 173);
+    background-size:cover;
+    background-blend-mode: multiply;
+  }
+
 body{
     overflow: hidden;
 }
@@ -93,16 +101,29 @@ input[type="submit"]{
     padding-bottom: 30px;
     box-shadow: 2px 2px 20px 0.1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    background-color: whitesmoke;
 }
 
 h2{
-    font-size: 50px;
+    font-family: poppins;
+    font-size: 30px;
+    color: thistle;
+    padding: 0px;
+    margin: 0px;
 }
 
 h4{
-    font-size: 30px;
+    font-size: 50px;
+    color: lavenderblush;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 li{
+    font-family: poppins;
     font-size: 20px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+
 }
