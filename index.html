@@ -30,20 +30,20 @@
             <div class="form">
                 <divx class="flex">
                     <div>
-                        <form action="">
                             <label>Username:</label><br>
-                            <input type="text" placeholder="Enter Username"><br>
+                            <input id="username" type="text"><br>
+                            <p class="tripError hidden">Please select trip type</p>
                             <input type="radio" name="trip">
                             <label>One Way Trip</label>
                             <input type="radio" name="trip">
                             <label>Round Trip</label>
                             <label>Trip Date:</label><br>
-                            <input type="date"><br>
+                            <p class="dateError hidden">Please enter date</p>
+                            <input id="date" type="date"><br>
                             <label>Additional Comment:</label><br>
-                            <textarea name="" id=""></textarea><br>
-                            <input type="submit"><br>
-                        </form>
-                    </div>
+                            <textarea id="comment" name="" id=""></textarea><br>
+                            <button class="submit" onclick="onSubmit()">Submit</button><br>
+                        </div>
                 </div>
             </div>
         </div>
