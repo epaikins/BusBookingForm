@@ -33,16 +33,21 @@
                             <label>Username:</label><br>
                             <input id="username" type="text"><br>
                             <p class="tripError hidden">Please select trip type</p>
-                            <input type="radio" name="trip">
+                            <input type="radio" value="One Way Trip" name="trip">
                             <label>One Way Trip</label>
-                            <input type="radio" name="trip">
+                            <input type="radio" value="Round Trip" name="trip">
                             <label>Round Trip</label>
                             <label>Trip Date:</label><br>
                             <p class="dateError hidden">Please enter date</p>
-                            <input id="date" type="date"><br>
+                            <input id="datePicker" type="date"><br>
+                            <p class="nopError hidden">Please enter number of People (1-5)</p>
+                            <label>Number of People</label><br>
+                            <input class="nop" type="number"><br>
                             <label>Additional Comment:</label><br>
                             <textarea id="comment" name="" id=""></textarea><br>
+                            <p class="textError hidden">Please comment cannot exceed 200 characters</p>
                             <button class="submit" onclick="onSubmit()">Submit</button><br>
+                            <p class="success hidden">Successfully Booked</p>
                         </div>
                 </div>
             </div>
