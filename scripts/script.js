@@ -21,14 +21,12 @@ function onSubmit(){
     }
 
     validate();
-    if(tripType !== undefined && username.value.length > 0 && date.value !== "" && comment.value.length <=200 && (nop.value>0 && nop.value <=5)){
+    if(tripType !== undefined && username.value.length > 0 && date.value !== "" && comment.value.length <=200 && (nop.value>0 && nop.value <=20)){
         success.classList.remove('hidden');
         setTimeout(()=>{success.classList.add('hidden');}, 3000)
         reset();
-
         return true;
     }
-    
     
     return false
 }
@@ -55,29 +53,41 @@ function reset(){
 function validate(){
     if(username.value === "" && date.value === "" && tripType === undefined && nop.value === "" ){
         username.style.borderColor = "red";
+        setTimeout(()=>{username.style.borderColor = "purple";}, 3000)
+
         username.placeholder = "Enter username...";
 
         dateError.classList.remove("hidden");
+        setTimeout(()=>{tripError.classList.add("hidden");}, 3000)
 
         tripError.classList.remove("hidden");
+        setTimeout(()=>{dateError.classList.add("hidden");}, 3000)
 
         nopError.classList.remove("hidden");
+        setTimeout(()=>{nopError.classList.add("hidden");}, 3000)
     }
     else if(username.value === ""){
         username.style.borderColor = "red";
+        setTimeout(()=>{username.style.borderColor = "red";}, 3000)
+
         username.placeholder = "Enter username...";
-    }
-    else if(date.value === ""){
-        dateError.classList.remove("hidden");
+        
     }
     else if(tripType === undefined){
         tripError.classList.remove("hidden");
+        setTimeout(()=>{tripError.classList.add("hidden");}, 3000)
+    }
+    else if(date.value === ""){
+        dateError.classList.remove("hidden")
+        setTimeout(()=>{dateError.classList.add("hidden");}, 3000)
     }
     else if(comment.value.length>200){
-        textError.classList.remove("hidden")
+        textError.classList.remove("hidden");
+        setTimeout(()=>{textError.classList.add("hidden");}, 3000)
     }
-    else if(nop.value === "" || nop.value<0 || nop.value > 5){
+    else if(nop.value === "" || nop.value<1 || nop.value > 20){
         nopError.classList.remove("hidden");
+        setTimeout(()=>{nopError.classList.add("hidden");}, 3000)
     }
 
 }
